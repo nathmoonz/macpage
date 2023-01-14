@@ -1,0 +1,7 @@
+@import url(header.css);
+@import url(midias.css);
+@import url(footer.css);
+
+body {
+    font-family: var(--fonte-padrao);
+}
