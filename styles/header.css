@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+:root {
+    --verde:#26baa3;
+    --cinza-escuro: #4f545a;
+    --cinza-claro: #c7c9ca;
+    --azul: #6074ff;
+    --fonte-padrao: "Bai Jamjuree";
+    --cor-borda-azul: #5c67cb;
+    --cor-borda-verde:#2f9684;
+    --footer: #f5f6f8;
+}
+
+body {
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 11em;
+}
+main {
+    margin: 0 2em 0;
+    font-family: var(--fonte-padrao);
+}
+
+.logo__cabecalho {
+    width: 6em;
+    margin: auto;
+    padding: 5em 0 3em;
+}
+
+.main__logo {
+   width: 100%;
+}
+
+.title__description {
+    color: var(--cinza-escuro);
+
+    text-align: center;
+    padding: 0 1.4em;
+}
+
+.description_text-container {
+    text-align: center;
+    color: var(--cinza-claro);
+    font-size: 0.9em;
+    width: 100%;
+    margin: auto;
+    padding: 1em 0 2em;
+}
+
+.container_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    padding-bottom: 4em;
+    
+}
+
+.button {
+    width: 50%;
+    padding: 0.7em 4em;
+    border-radius: 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.162);
+}
+
+.button__ios {
+    background-color: var(--verde);
+    border: 1px solid var(--cor-borda-verde);
+    border-bottom: 3px solid var(--cor-borda-verde);
+}
+
+.button__mac {
+    background-color: var(--azul);
+    border: 0 solid var(--cor-borda-azul);
+    border-width: 1px 1px 4px 1px;
+}
+
+@media screen and (min-width:1500px) {
+    body {
+     background-image: url(../images/bg-header-desktop.png);
+    }
+
+    .logo__cabecalho {
+        width: 9em;
+    }
+
+    .title__description {
+        font-size: 2.5em;
+    }
+
+    .description_text-container {
+        font-size: 1.6em;
+        width: 40%;
+    }
+
+    .container_buttons {
+        flex-direction: row;
+        width: 30%;
+        margin: auto;
+        gap: 1.5em;
+    }
+
+    .button {
+        border-radius: 35px;
+        font-size: 1.3em;
+        padding: 0.8em 1em;
+    }
+
+    .button__ios:hover {
+        background-color: #2f9685;
+    
+    }
+
+    .button__mac:hover {
+        background-color: #505ab1;
+      
+    }
+}
+
+
